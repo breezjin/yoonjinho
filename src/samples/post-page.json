@@ -1,0 +1,157 @@
+{
+  "object": "page",
+  "id": "504cf517-982e-4760-bba6-c34e59d70d11",
+  "created_time": "2022-11-29T06:51:00.000Z",
+  "last_edited_time": "2022-12-23T05:10:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "82f0816e-0585-42c1-a4c9-5ff74387a93d"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "82f0816e-0585-42c1-a4c9-5ff74387a93d"
+  },
+  "cover": {
+    "type": "file",
+    "file": {
+      "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/16945167-467f-44af-98a6-1c86bc264462/Untitled_%2814%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230331%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230331T055627Z&X-Amz-Expires=3600&X-Amz-Signature=c586b5bd5da875785d6a0fc6382f73ed2bc48724ca3cad08542b43aebc0a8551&X-Amz-SignedHeaders=host&x-id=GetObject",
+      "expiry_time": "2023-03-31T06:56:27.187Z"
+    }
+  },
+  "icon": {
+    "type": "emoji",
+    "emoji": "👨🏻‍💻"
+  },
+  "parent": {
+    "type": "database_id",
+    "database_id": "4ffbbe83-167f-47ee-b9e2-7bc4a1db1186"
+  },
+  "archived": false,
+  "properties": {
+    "상태": {
+      "id": "Rkj%3C",
+      "type": "status",
+      "status": {
+        "id": "59521620-e54b-4091-8f1d-a323caae6b58",
+        "name": "배포됨",
+        "color": "green"
+      }
+    },
+    "Tags": {
+      "id": "ThV%3B",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "83ac2334-7303-482e-afc9-74e06eed9ce2",
+          "name": "breez.fm",
+          "color": "blue"
+        },
+        {
+          "id": "749f324c-1ffd-45cb-9d89-6a9cea5209a6",
+          "name": "Next.js",
+          "color": "pink"
+        },
+        {
+          "id": "3f200e06-bc99-47c4-a991-7da6dd312731",
+          "name": "typescript",
+          "color": "pink"
+        },
+        {
+          "id": "a8c1bf21-a83f-47b5-8105-9009a63b0b5f",
+          "name": "tailwind css",
+          "color": "pink"
+        }
+      ]
+    },
+    "Description": {
+      "id": "UZ%7Cf",
+      "type": "rich_text",
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "기존 react 기반의 프로젝트를 next.js + typescript 형태로 리팩토링하는 과정이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "기존 react 기반의 프로젝트를 next.js + typescript 형태로 리팩토링하는 과정이다.",
+          "href": null
+        }
+      ]
+    },
+    "최하위 정렬": {
+      "id": "Z%3E%7BX",
+      "type": "checkbox",
+      "checkbox": false
+    },
+    "Updated": {
+      "id": "dRM%7D",
+      "type": "last_edited_time",
+      "last_edited_time": "2022-12-23T05:10:00.000Z"
+    },
+    "Published": {
+      "id": "f%3EFo",
+      "type": "checkbox",
+      "checkbox": false
+    },
+    "생성자": {
+      "id": "tmJE",
+      "type": "created_by",
+      "created_by": {
+        "object": "user",
+        "id": "82f0816e-0585-42c1-a4c9-5ff74387a93d",
+        "name": "윤진호",
+        "avatar_url": "https://lh3.googleusercontent.com/a-/AAuE7mAdywCZlMVZG9vPOcQUWoxwjkP1J0ufbJboOXXIzrQ=s100",
+        "type": "person",
+        "person": {
+          "email": "dreamer05@korea.ac.kr"
+        }
+      }
+    },
+    "카테고리": {
+      "id": "yJs%3F",
+      "type": "select",
+      "select": {
+        "id": "e1304c2d-8855-42df-8843-a42bcfb20398",
+        "name": "개발일지",
+        "color": "pink"
+      }
+    },
+    "Created": {
+      "id": "%7D%7B%5Bq",
+      "type": "created_time",
+      "created_time": "2022-11-29T06:51:00.000Z"
+    },
+    "Title": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Refactoring (1) - 환경설정",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Refactoring (1) - 환경설정",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/Refactoring-1-504cf517982e4760bba6c34e59d70d11"
+}

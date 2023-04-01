@@ -1,0 +1,244 @@
+{
+  "object": "database",
+  "id": "4ffbbe83-167f-47ee-b9e2-7bc4a1db1186",
+  "cover": null,
+  "icon": null,
+  "created_time": "2022-11-29T05:48:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "82f0816e-0585-42c1-a4c9-5ff74387a93d"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "82f0816e-0585-42c1-a4c9-5ff74387a93d"
+  },
+  "last_edited_time": "2023-03-27T17:50:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Blog",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Blog",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": true,
+  "properties": {
+    "상태": {
+      "id": "Rkj%3C",
+      "name": "상태",
+      "type": "status",
+      "status": {
+        "options": [
+          {
+            "id": "256668d3-3d94-4ed2-be28-dc6c00e9836f",
+            "name": "초안",
+            "color": "default"
+          },
+          {
+            "id": "5484cc8a-61d5-450d-87be-59a57c2688b7",
+            "name": "작성중",
+            "color": "blue"
+          },
+          {
+            "id": "59521620-e54b-4091-8f1d-a323caae6b58",
+            "name": "배포됨",
+            "color": "green"
+          }
+        ],
+        "groups": [
+          {
+            "id": "b0769dbb-c490-4e44-972e-293f50f61473",
+            "name": "To-do",
+            "color": "gray",
+            "option_ids": ["256668d3-3d94-4ed2-be28-dc6c00e9836f"]
+          },
+          {
+            "id": "4ab286f9-9639-4206-a260-c667220cf4da",
+            "name": "In progress",
+            "color": "blue",
+            "option_ids": ["5484cc8a-61d5-450d-87be-59a57c2688b7"]
+          },
+          {
+            "id": "f19dd870-e736-41f4-9d9b-069e74f172ef",
+            "name": "Complete",
+            "color": "green",
+            "option_ids": ["59521620-e54b-4091-8f1d-a323caae6b58"]
+          }
+        ]
+      }
+    },
+    "Tags": {
+      "id": "ThV%3B",
+      "name": "Tags",
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "83ac2334-7303-482e-afc9-74e06eed9ce2",
+            "name": "breez.fm",
+            "color": "blue"
+          },
+          {
+            "id": "749f324c-1ffd-45cb-9d89-6a9cea5209a6",
+            "name": "Next.js",
+            "color": "pink"
+          },
+          {
+            "id": "3f200e06-bc99-47c4-a991-7da6dd312731",
+            "name": "typescript",
+            "color": "pink"
+          },
+          {
+            "id": "a8c1bf21-a83f-47b5-8105-9009a63b0b5f",
+            "name": "tailwind css",
+            "color": "pink"
+          },
+          {
+            "id": "f8d0be4a-0fe8-4d9e-bb82-8dadef4bb1d6",
+            "name": "framework",
+            "color": "green"
+          },
+          {
+            "id": "ef1ec0e7-078f-4af6-8cfb-43da84ebccfd",
+            "name": "\bproject init",
+            "color": "green"
+          },
+          {
+            "id": "da93530a-3be9-49af-a433-89026b992ec1",
+            "name": "github",
+            "color": "red"
+          },
+          {
+            "id": "13ba15c2-a171-46a4-9aa1-63ef7968af4b",
+            "name": "youtube",
+            "color": "red"
+          },
+          {
+            "id": "7d17d56c-777d-451a-95a2-ab52fd82c570",
+            "name": "node module",
+            "color": "default"
+          },
+          {
+            "id": "cb42745c-c8ba-4635-809a-7e6ea678f20e",
+            "name": "library",
+            "color": "orange"
+          },
+          {
+            "id": "949e3b57-85e8-4a20-9e7b-9465fec5ae1d",
+            "name": "service check",
+            "color": "purple"
+          },
+          {
+            "id": "6e281ffa-8a2d-4764-a929-c911dbdd05d0",
+            "name": "issue",
+            "color": "yellow"
+          },
+          {
+            "id": "c7cf2f05-7372-478a-968a-888cc3608771",
+            "name": "deploy",
+            "color": "gray"
+          }
+        ]
+      }
+    },
+    "Description": {
+      "id": "UZ%7Cf",
+      "name": "Description",
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "최하위 정렬": {
+      "id": "Z%3E%7BX",
+      "name": "최하위 정렬",
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Updated": {
+      "id": "dRM%7D",
+      "name": "Updated",
+      "type": "last_edited_time",
+      "last_edited_time": {}
+    },
+    "Published": {
+      "id": "f%3EFo",
+      "name": "Published",
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "생성자": {
+      "id": "tmJE",
+      "name": "생성자",
+      "type": "created_by",
+      "created_by": {}
+    },
+    "카테고리": {
+      "id": "yJs%3F",
+      "name": "카테고리",
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "c57afb9b-008a-4539-a94c-28c46bbb515c",
+            "name": "일기",
+            "color": "gray"
+          },
+          {
+            "id": "c272f9bb-53ff-4f87-bb8c-1117102fcb8c",
+            "name": "개발잡담",
+            "color": "pink"
+          },
+          {
+            "id": "e1304c2d-8855-42df-8843-a42bcfb20398",
+            "name": "개발일지",
+            "color": "pink"
+          },
+          {
+            "id": "1a5ea013-70b8-4c41-9714-492a87313bf8",
+            "name": "Biz잡담",
+            "color": "blue"
+          },
+          {
+            "id": "f7d715ef-4bab-4ca6-9384-2d4fd82ab69f",
+            "name": "살아가기",
+            "color": "green"
+          },
+          {
+            "id": "e1a53444-044a-465b-8fde-1c967bf54b3f",
+            "name": "안내 및 공지",
+            "color": "default"
+          }
+        ]
+      }
+    },
+    "Created": {
+      "id": "%7D%7B%5Bq",
+      "name": "Created",
+      "type": "created_time",
+      "created_time": {}
+    },
+    "Title": {
+      "id": "title",
+      "name": "Title",
+      "type": "title",
+      "title": {}
+    }
+  },
+  "parent": {
+    "type": "page_id",
+    "page_id": "66f1ee3f-56a4-4e46-876f-5c9a357db60f"
+  },
+  "url": "https://www.notion.so/4ffbbe83167f47eeb9e27bc4a1db1186",
+  "archived": false
+}

@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Notion Blog Project for me, yoonjinho.
+You can meet [https://yoonjinho.com](https://yoonjinho.com) soon.
+
+## Project Spec
+
+- Nextjs 13 experimental (appDir beta)
+- `create-next-app` with yarn
+- typescript
+- eslint
+- prettier
+- lint-staged
+- husky
+- zustand
+- notion API
 
 ## Getting Started
 
@@ -8,6 +21,7 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+# yarn 방식을 추천합니다.
 # or
 pnpm dev
 ```

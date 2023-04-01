@@ -1,0 +1,36 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "property_item",
+      "type": "rich_text",
+      "id": "UZ%7Cf",
+      "rich_text": {
+        "type": "text",
+        "text": {
+          "content": "기존 react 기반의 프로젝트를 next.js + typescript 형태로 리팩토링하는 과정이다.",
+          "link": null
+        },
+        "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+        },
+        "plain_text": "기존 react 기반의 프로젝트를 next.js + typescript 형태로 리팩토링하는 과정이다.",
+        "href": null
+      }
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "property_item",
+  "property_item": {
+    "id": "UZ%7Cf",
+    "next_url": null,
+    "type": "rich_text",
+    "rich_text": {}
+  }
+}
