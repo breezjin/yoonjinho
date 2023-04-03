@@ -2902,15 +2902,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-to-jsx@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "markdown-to-jsx@npm:7.2.0"
-  peerDependencies:
-    react: ">= 0.14.0"
-  checksum: ea417e684d7eec9f1beebc9423aba377116ef77c3cd83a2d622df1b9030ffef99aa9b3f431192b94f3237943a33560e6dda9be8a4c1d25187518d09986dad22f
-  languageName: node
-  linkType: hard
-
 "mdast-util-definitions@npm:^5.0.0":
   version: 5.1.2
   resolution: "mdast-util-definitions@npm:5.1.2"
@@ -5257,7 +5248,6 @@ __metadata:
     github-markdown-css: ^5.2.0
     husky: ^8.0.3
     lint-staged: ^13.2.0
-    markdown-to-jsx: ^7.2.0
     next: 13.2.4
     notion-to-md: ^2.5.5
     postcss: ^8.4.21
