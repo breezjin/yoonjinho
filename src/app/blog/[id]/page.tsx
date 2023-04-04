@@ -1,5 +1,3 @@
-import 'github-markdown-css';
-
 import { NotionToMarkdown } from 'notion-to-md';
 import ReactMarkdown from 'react-markdown';
 
@@ -18,11 +16,8 @@ export default async function Post({
   const mdString = n2m.toMarkdownString(mdblocks);
   // const postProperties = await clientGetPageProperties(params.id);
   // console.log('post >>>', postProperties);
+  console.log('mdblocks >>>', mdblocks);
   console.log('mdString >>>', mdString);
 
-  return (
-    <>
-      <ReactMarkdown>{mdString}</ReactMarkdown>
-    </>
-  );
+  return <ReactMarkdown className='prose dark:prose-invert'>{mdString}</ReactMarkdown>;
 }

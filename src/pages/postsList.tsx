@@ -11,7 +11,7 @@ interface PostsListProps {
 export default function PostsList({ posts }: PostsListProps) {
   return (
     <main>
-      <div className={clsx('flex gap-4 w-full flex-wrap p-4')}>
+      <div className={clsx('flex w-full flex-wrap gap-4 p-4')}>
         {posts?.results.map((post: any) => (
           <>
             <Link href={`/blog/${post.id}`}>

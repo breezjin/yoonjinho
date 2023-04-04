@@ -9,15 +9,26 @@ interface PostCardProps {
 
 export default function PostCard({ id, url, postTitle }: PostCardProps) {
   return (
-    <div className={clsx('flex flex-col w-96 h-72')}>
-      {url && <Image width={384} height={288} key={id} src={url} alt={postTitle} />}
-      {!url && (
-        <div className={clsx('flex w-[384px] h-[288px] justify-center items-center bg-slate-200')}>
-          이미지가 없습니다.
-        </div>
-      )}
-      <div className={clsx('text-h1')}>{postTitle}</div>
-      <div></div>
-    </div>
+    <>
+      <div className={clsx('flex h-60 w-80 items-center justify-center bg-slate-200')}>
+        {url && (
+          <div className={clsx('relative flex h-60 w-80 items-center justify-center overflow-hidden bg-slate-200')}>
+            <Image
+              key={id}
+              src={url}
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes='(max-width: 320px) 320px'
+              priority
+              alt={postTitle}
+            />
+          </div>
+        )}
+        {!url && (
+          <div className={clsx('flex h-60 w-80 items-center justify-center bg-slate-200')}>이미지가 없습니다.</div>
+        )}
+      </div>
+      <div className={clsx('text-h1 w-80')}>{postTitle}</div>
+    </>
   );
 }

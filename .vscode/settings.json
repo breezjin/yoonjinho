@@ -10,5 +10,14 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnSave": true,
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "cSpell.words": ["callout", "gstatic", "mdblocks", "Nextjs", "Nkcjk", "notionhq"]
+  "cSpell.words": ["callout", "gstatic", "mdblocks", "newtab", "Nextjs", "Nkcjk", "notionhq", "prismjs"],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  }
 }
