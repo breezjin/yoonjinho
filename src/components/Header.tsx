@@ -11,13 +11,12 @@ const menus = [
 
 export default function Header() {
   return (
-    <nav className={clsx('b-8 flex h-24 w-screen flex-col')}>
+    <nav className={clsx('flex h-12 w-screen items-center gap-4 bg-black p-4 text-white')}>
       {menus.map(menu => (
         <Link key={menu.href} href={menu.href}>
           {menu.label}
         </Link>
       ))}
-      <Link href={'/'}>Home</Link>
     </nav>
   );
 }
