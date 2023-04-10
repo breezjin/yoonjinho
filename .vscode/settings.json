@@ -10,7 +10,19 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnSave": true,
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "cSpell.words": ["callout", "gstatic", "mdblocks", "newtab", "Nextjs", "Nkcjk", "notionhq", "prismjs"],
+  "cSpell.words": [
+    "callout",
+    "gstatic",
+    "mapbox",
+    "mdblocks",
+    "newtab",
+    "Nextjs",
+    "Nkcjk",
+    "notionhq",
+    "prismjs",
+    "rehype",
+    "unoptimized"
+  ],
   "editor.quickSuggestions": {
     "strings": "on"
   },

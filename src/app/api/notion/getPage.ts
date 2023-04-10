@@ -6,7 +6,7 @@ const NOTION_API_SECRET = process.env.NEXT_PUBLIC_NOTION_API_SECRET;
 
 export default async function getPage(id?: string) {
   const searchHeaders = {
-    Authorization: NOTION_API_SECRET,
+    Authorization: `Bearer ${NOTION_API_SECRET}`,
     'Notion-Version': NOTION_API_VERSION,
   };
 
