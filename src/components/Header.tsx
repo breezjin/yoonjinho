@@ -136,7 +136,7 @@ function MobileNavigation(props: any) {
 }
 
 function NavItem({ href, children }: NavItemProps) {
-  let isActive = usePathname() === href;
+  const isActive = usePathname() === href;
 
   return (
     <li>
@@ -246,11 +246,11 @@ function Avatar({ large = false, className, ...props }: AvatarProps) {
 }
 
 export function Header() {
-  let isHomePage = usePathname() === '/';
+  const isHomePage = usePathname() === '/';
 
-  let headerRef = useRef<any>();
-  let avatarRef = useRef<any>();
-  let isInitial = useRef<any>(true);
+  const headerRef = useRef<any>();
+  const avatarRef = useRef<any>();
+  const isInitial = useRef<any>(true);
 
   useEffect(() => {
     let downDelay = avatarRef.current?.offsetTop ?? 0;
@@ -302,12 +302,12 @@ export function Header() {
         return;
       }
 
-      let fromScale = 1;
-      let toScale = 36 / 64;
-      let fromX = 0;
-      let toX = 2 / 16;
+      const fromScale = 1;
+      const toScale = 36 / 64;
+      const fromX = 0;
+      const toX = 2 / 16;
 
-      let scrollY = downDelay - window.scrollY;
+      const scrollY = downDelay - window.scrollY;
 
       let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale;
       scale = clamp(scale, fromScale, toScale);
@@ -317,9 +317,9 @@ export function Header() {
 
       setProperty('--avatar-image-transform', `translate3d(${x}rem, 0, 0) scale(${scale})`);
 
-      let borderScale = 1 / (toScale / scale);
-      let borderX = (-toX + x) * borderScale;
-      let borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`;
+      const borderScale = 1 / (toScale / scale);
+      const borderX = (-toX + x) * borderScale;
+      const borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`;
 
       setProperty('--avatar-border-transform', borderTransform);
       setProperty('--avatar-border-opacity', scale === toScale ? 1 : 0);
