@@ -1,19 +1,14 @@
+'use client';
+
 import dayjs from 'dayjs';
 import Link from 'next/link';
-import { NotionToMarkdown } from 'notion-to-md';
-import ReactMarkdown from 'react-markdown';
+import { NotionAPI } from 'notion-client';
+import { NotionRenderer } from 'react-notion-x';
 
 import clientGetPageProperties from '@/app/api/notion/clientGetPageProperties';
-import getPage from '@/app/api/notion/getPage';
 import { Container } from '@/components/Container';
-import { PostLayout } from '@/components/PostLayout';
 import { Prose } from '@/components/Prose';
-import { formatDate } from '@/lib/formatDate';
-import notion from '@/sdk/notion';
-import { PostLayoutProps } from '@/types/contentType';
 import { IconProps } from '@/types/uiTypes';
-
-const n2m = new NotionToMarkdown({ notionClient: notion });
 
 function ArrowLeftIcon(props: IconProps) {
   return (
@@ -35,13 +30,10 @@ export default async function Post({
   params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const mdblocks = await n2m.pageToMarkdown(params.id);
-  const mdString = n2m.toMarkdownString(mdblocks);
-  // const post = await getPage(params.id);
   const post: any = await clientGetPageProperties(params.id);
   // console.log('post >>>', post);
-  console.log('mdblocks >>>', mdblocks);
-  // console.log('mdString >>>', mdString);
+  const notion = new NotionAPI();
+  const recordMap = await notion.getPage(params.id);
 
   return (
     <>
@@ -71,7 +63,7 @@ export default async function Post({
                 </time>
               </header>
               <Prose className='mt-8'>
-                <ReactMarkdown>{mdString}</ReactMarkdown>
+                <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
               </Prose>
             </article>
           </div>
