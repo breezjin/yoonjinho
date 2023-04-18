@@ -39,8 +39,8 @@ export default async function Post({
   const mdString = n2m.toMarkdownString(mdblocks);
   // const post = await getPage(params.id);
   const post: any = await clientGetPageProperties(params.id);
-  console.log('post >>>', post);
-  // console.log('mdblocks >>>', mdblocks);
+  // console.log('post >>>', post);
+  console.log('mdblocks >>>', mdblocks);
   // console.log('mdString >>>', mdString);
 
   return (
