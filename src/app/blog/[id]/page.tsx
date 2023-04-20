@@ -1,8 +1,8 @@
-'use client';
-
+import axios from 'axios';
 import dayjs from 'dayjs';
 import Link from 'next/link';
 import { NotionAPI } from 'notion-client';
+import NotionPageToHtml from 'notion-page-to-html';
 import { NotionRenderer } from 'react-notion-x';
 
 import clientGetPageProperties from '@/app/api/notion/clientGetPageProperties';
@@ -32,8 +32,10 @@ export default async function Post({
 }) {
   const post: any = await clientGetPageProperties(params.id);
   // console.log('post >>>', post);
-  const notion = new NotionAPI();
-  const recordMap = await notion.getPage(params.id);
+  // const NotionPageToHtml = require('notion-page-to-html');
+  // const { html } = await NotionPageToHtml.convert(`https://www.notion.so/breezjin/${params.id}`);
+  const html: any = await axios.get(`https://notion-page-to-html-api.vercel.app/html?id=${params.id}`);
+  console.log('html >>>', html);
 
   return (
     <>
@@ -62,9 +64,7 @@ export default async function Post({
                   <span className='ml-3'>{dayjs(post?.created_time).format('YYYY-MM-DD')}</span>
                 </time>
               </header>
-              <Prose className='mt-8'>
-                <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
-              </Prose>
+              <Prose className='mt-8'>{html}</Prose>
             </article>
           </div>
         </div>
